@@ -1,0 +1,59 @@
+body {
+	background-color: slateblue;
+	user-select: none;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 4px;
+	padding: 4px;
+	border-radius: 4px;
+	max-width: 360px;
+}
+
+.item {
+	background-color: lightyellow;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
+	cursor: pointer;
+}
+
+form {
+	max-width: 100%;
+}
+
+input {
+	width: 100%;
+	height: 60px;
+	font-size: 30px;
+	outline: none;
+	border: none;
+	text-align: right;
+}
+
+.input {
+	grid-column: 1/-1;
+	padding: 0;
+}
+
+.clean {
+	grid-column: 1/3;
+}
+
+.back {
+	grid-column: 3/-1;
+}
+
+.equal {
+	grid-column: 4;
+	grid-row: 6/8;
+}
+
+.zero {
+	grid-column: 1/3;
+}
